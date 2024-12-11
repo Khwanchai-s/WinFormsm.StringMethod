@@ -26,9 +26,9 @@ namespace WinFormsm.StringMethod
                 title = fullName.Substring(0, x);
             }
             fullName = fullName.Substring(x).Trim();
-
             //หาตำแหน่งช่องว่างระหว่างชื่อและสกุล
-            x = fullName.IndexOf(" ");
+            x = fullName.IndexOf(' ');
+            
             //ตัดตั้งแต่ตัวที่ 0 จนถึงตำแหน่งช่องว่างจะได้ชื่อ
             firstname = fullName.Substring(0, x).Trim();
             //ตัดตั้งแต่ตำแหน่งช่องว่าง ไปจนหมดข้อความจะได้นามสกุล
